@@ -70,3 +70,13 @@ function scrollToContatti() {
   // Esegui lo scrolling alla posizione della sezione "contatti"
   contattiSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+// da cancellare
+
+document.addEventListener('click', function(event) {
+  var secondChild = document.querySelector('#hamButton > :nth-child(2)');
+  if (secondChild.classList.contains('hidden')) {
+    dropMenu();
+  }
+});
+}
