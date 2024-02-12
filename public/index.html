@@ -24,15 +24,15 @@
 
 <body class="w-full h-screen bg-[#b7e6f4] text-lg">
     <div class="fixed top-0 left-0 z-10 flex flex-row items-center justify-between w-full h-16 navbar bg-[#b7e6f4] border-b border-b-[#123442]">
-      <div class="flex items-center justify-center h-10 ml-6 w-36 navbar-logo">
+      <div class="flex items-center justify-center h-10 md:ml-6 w-36 navbar-logo">
         <img src="../img/Il Secchio.png" alt="" srcset="">
       </div>
-      <div id="menuWindow" class="absolute w-full navbar-menu bg-[#b7e6f4] py-7 -top-60 md:static md:h-10 md:flex md:justify-end md:items-center">
+      <div id="menuWindow" class="absolute w-full navbar-menu bg-[#b7e6f4] py-7 -top-60 md:static md:h-10 md:flex md:justify-end md:items-center md:border-0 border border-b-[#123442]">
         <ul class="flex flex-col gap-5 md:gap-24 px-3 mx-5 md:flex-row md:w-2/3 md:justify-between md:mx-10 max-w-[700px]">
-          <li class="transform hover:scale-125"><a href="#home" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Home</a></li>
-          <li class="transform hover:scale-125"><a href="#menu" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Menù</a></li>
-          <li class="transform hover:scale-125"><a href="#about" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Noi</a></li>
-          <li class="transform hover:scale-125"><a href="#contatti" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Contatti</a></li>
+          <li class="transform md:hover:scale-125"><a href="#home" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Home</a></li>
+          <li class="transform md:hover:scale-125"><a href="#menu" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Menù</a></li>
+          <li class="transform md:hover:scale-125"><a href="#about" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Noi</a></li>
+          <li class="transform md:hover:scale-125"><a href="#contatti" class="md:mb-3 text-lg uppercase font-protest  text-[#123442]">Contatti</a></li>
         </ul>
       </div>
       
@@ -46,7 +46,7 @@
       <!-- <div class="absolute inset-0 opacity-50 bg-gradient-to-b from-black via-black to-transparent"></div> -->
       <div class="h-auto w-2/3 max-w-lg  bg-[#8bc1d6] p-5 rounded-3xl ">
         <p class="text-2xl text-black">Vieni a trovarci per aperitivi, pranzi e cene</p>
-        <p class="text-3xl text-left text-black font-protest">-Il Secchio</p>
+        <p class="text-2xl text-left text-black font-protest">-Il Secchio</p>
       </div>
       <div id="contattaci" onclick="scrollToContatti()" class="fixed right-8 bottom-8 rounded-full h-24 w-24 bg-[#8bc1d6] items-center justify-center content-center flex font-protest border border-[#123442]">
         <p class="">Contattaci!</p>
@@ -340,19 +340,23 @@
                 <p>Sabato/Domenica 17:00-23:00</p>
             </div> -->
             <div class="contatti lg:w-3/4 lg:mx-auto">
-                <h2 class="my-5 text-2xl text-center  uppercase font-bold text-[#123442] font-protest">Contattaci</h2>
+                <h2 class="my-5 text-2xl text-center uppercase font-bold text-[#123442] font-protest">Contattaci</h2>
                 <form action="https://formsubmit.co/your@email.com" method="POST" class="flex flex-col gap-5 mx-auto my-3 mb-4 border border-[#8bc1d6] p-6 max-w-md">
-                    <input type="text" name="name" placeholder="   NOME" required>
-                    <input type="email" name="email" placeholder="   EMAIL" required>
-                    <button type="submit" class="mb-3 text-lg uppercase hover:underline bg-[#8bc1d6]  w-20 m-auto rounded-md">invia</button>
-            </form>
+                    <input type="text" name="surname" placeholder="COGNOME" required class="text-[#297897]">
+                    <input type="number" name="num_people" placeholder="NUMERO DI PERSONE" required class="text-[#297897]">
+                    <input type="date" name="date" placeholder="QUANDO" required class="text-[#297897]">
+                    <input type="time" name="time" placeholder="ORARIO" required class="text-[#297897]">
+                    <input type="email" name="email" placeholder="EMAIL" required class="text-[#297897]">
+                    <button type="submit" class="mb-3 text-lg uppercase hover:underline bg-[#8bc1d6] w-20 m-auto rounded-md">Invia</button>
+                </form>
             </div>
+            
         </div>
         <div class="w-full contatti1 lg:flex lg:flex-row-reverse lg:justify-center lg:gap-6 lg:h-screen lg:w-3/4 lg:py-16">
             <div class="contatti1a lg:my-auto lg:w-1/2">
                 <h2 class="my-4 text-2xl text-center uppercase lg:text-left font-bold text-[#123442] font-protest">Vieni a trovarci</h2>
                 <div class="mx-auto my-3 mb-4 w-max dove lg:mx-0">
-                    <h4>Taverna <span class=" font-protest text-xl text-[#123442]">Il Secchio</span></h4>
+                    <h4>Taverna <span class=" font-protest text-lg text-[#123442]">Il Secchio</span></h4>
                     <p>Piazza del Mercato Nuovo, 42c</p>
                     <p>50123 Firenze FI</p>
                     <a href="tel:+">055 12345678</a>
